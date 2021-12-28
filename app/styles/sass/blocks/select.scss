@@ -1,0 +1,123 @@
+.select {
+	position: relative;
+	display: block;
+	min-width: 220px;
+	width: 100%;
+	max-width: 217px;
+	&__head {
+		position: relative;
+		width: 100%;
+		padding: 7px 10px;
+		color: rgba(66, 67, 72, 0.8);
+		cursor: pointer;
+		background: #D1F1ED;
+		border-radius: 4px;
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 20px;
+		color: #50B7A8;
+		&::after {
+			width: 9px;
+			height: 6px;
+			background: url("../images/dist/icons/arrow-mentol.svg");
+			fill: #0dcaf0;
+			position: absolute;
+			right: 12px;
+			bottom: 50%;
+			transform: translateY(50%);
+			content: '';
+			display: block;
+			transition: .2s ease-in;
+		}
+		&.open {
+			border-radius: 4px 4px 0 0;
+			&::after {
+				transform: translateY(50%) rotate(180deg);
+			}
+		}
+	}
+	&__list {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #D1F1ED;
+		border-radius: 0 0 4px 4px;
+		margin-top: -1px;
+		max-height: 205px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		z-index: 100;
+		padding: 0;
+		font-size: 16px;
+		color: #424348;
+		scrollbar-color: dark;
+		scrollbar-width: thin;
+		overscroll-behavior: contain;
+		&::-webkit-scrollbar {
+			width: 7px;
+			background-color: #F8F9FA;
+			padding: 5px;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: #D9D9D9;
+		}
+	}
+	&__item {
+		color: #50B7A8;
+		position: relative;
+		border-top: 1px solid rgba(224, 229, 231, 0.5);
+		padding: 7px 10px;
+		cursor: pointer;
+		list-style-type: none;
+		&:hover {
+			background-color: rgb(218 255 252);
+		}
+	}
+	&.blue {
+		.select {
+			&__head {
+				color: #5971E9;
+				background: #DBDFF2;
+				&::after {
+					background: url("../images/dist/icons/arrow-blue.svg");
+				}
+			}
+			&__list {
+				background: #DBDFF2;
+			}
+			&__item {
+				color: #5971E9;
+				&:hover {
+					background-color: #a6b5ff38;
+				}
+			}
+		}
+	}
+	&.alt {
+		max-width: none;
+		.select {
+			&__head {
+				font-weight: 300;
+				padding: 16px 10px;
+				background: #EFF3F5;
+				line-height: 18px;
+				color: rgb(0, 0, 0, 0.97);
+				&::after {
+					background: url("../images/dist/icons/arrow-grey.svg");
+				}
+			}
+			&__list {
+				background: #EFF3F5;
+			}
+			&__item {
+				color: rgba(0, 0, 0, 0.97);
+				&:hover {
+					background-color: #cbcbcb38;
+				}
+			}
+		}
+	}
+}

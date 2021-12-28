@@ -1,0 +1,17 @@
+.type-analytics {
+	ul {
+		gap: 20px;
+		li {
+			cursor: pointer;
+			text-align: center;
+			min-width: 217px;
+			padding: 33px 5px;
+			background: #FFFFFF;
+			border: 1px solid #ECEEF3;
+			border-radius: 4px;
+			&.active {
+				background: #DBDFF2;
+			}
+		}
+	}
+}

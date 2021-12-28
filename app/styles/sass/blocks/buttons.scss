@@ -1,0 +1,46 @@
+.btn {
+	&__header {
+		padding: 9px 35px;
+		border-radius: 4px;
+		img {
+			margin-right: 8px;
+		}
+		&.green {
+			background: #2F4632;
+			border: 1px solid #397942;
+			span {
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 16px;
+				color: #55E768;
+			}
+		}
+		&.red {
+			background: #4D3131;
+			border: 1px solid #793939;
+			span {
+				color: #FF5050;
+			}
+		}
+	}
+	&__modal {
+		border: none;
+		padding: 13px 10px;
+		border-radius: 4px;
+		color: rgba(255, 255, 255, 0.97);
+		font-weight: 800;
+		line-height: 20px;
+		&.mentol {
+			background: linear-gradient(91.17deg, #5FD9C7 6.48%, #51B6A9 100.6%);
+			&:hover {
+				background: linear-gradient(91.17deg,#5fd9c7 6.48%,#53f7e2 100.6%);
+			}
+		}
+		&.blue {
+			background: linear-gradient(91.17deg, #5A69EF 6.48%, #4B5FC0 100.6%);
+			&:hover {
+				background: linear-gradient(91.17deg,#5a69ef 6.48%,#6f85eb 100.6%);
+			}
+		}
+	}
+}

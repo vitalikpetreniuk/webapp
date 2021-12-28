@@ -1,12 +1,56 @@
-<!--#set var="title" value="OptimizedHTML 5" -->
-<!--#include virtual="/parts/header.html" -->
-
-	<div style="max-width: 700px; margin: auto">
-
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-
-	</div>
-
-<!--#include virtual="/parts/footer.html" -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Webapp">
+		<link rel="icon" href="images/favicon.png">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<header class="header d-flex">
+			<a href="#" class="header__logo d-flex align-items-center">
+				<img src="images/logo.svg" alt="logo">
+				<span>Webapp</span>
+			</a>
+			<div class="header__buttons d-flex">
+				<button class="btn__header green d-flex align-items-center">
+					<img src="images/dist/icons/plus.svg" alt="plus">
+					<span>Revenue</span>
+				</button>
+				<button class="btn__header red d-flex align-items-center">
+					<img src="images/dist/icons/minus.svg" alt="minus">
+					<span>Expenses</span>
+				</button>
+			</div>
+		</header>
+		<div class="content d-flex">
+			<nav class="nav">
+				<ul class="nav-tabs">
+					<li>Net profit</li>
+					<li>Calculator</li>
+				</ul>
+			</nav>
+			<section class="section d-flex flex-column">
+				<div class="tabs-section">
+					<button>Repotny</button>
+					<button>Analytics</button>
+				</div>
+				<div class="type-analytics mt-20">
+					<ul class="d-flex">
+						<li class="active">P/C Corve model</li>
+						<li>Breleven Analytics</li>
+						<li>Sweetspot Analytics</li>
+						<li>Specid event Analytics</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

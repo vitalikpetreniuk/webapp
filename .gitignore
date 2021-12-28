@@ -1,5 +1,8 @@
 /**/node_modules/
 /.git/
+.idea/
+.bowerrc
+.editorconfig
 /**/Thumbs.db
 /**/*.DS_Store
 /**/package-lock.json
