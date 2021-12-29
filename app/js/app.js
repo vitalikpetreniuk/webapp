@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	$('.mounthly-calc__list .title').on('click', function () {
 		$(this).toggleClass('active')
-		// let inner = $(this).nextElementSibling
-		// console.log($(this).next())
 		if ($(this).hasClass('active')) {
 			$(this).next().toggleClass('active')
 		} else {
@@ -23,24 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		dateFormat: "d.m.Y",
 		defaultDate: ["today", "31.12.2021"],
 		showMonths: 3,
-		// disable: [
-		// 	function(date) {
-		// 		// disable every multiple of 8
-		// 		return !(date.getDate() % 8);
-		// 	}
-		// ]
 	})
 	
 	$('#revenue').click(() => {
 		$('#modal-revenue, .modal-overlay').addClass('active')
+		$('html, body').addClass('_over-hidden')
 	})
 	$('#expenses').click(() => {
 		$('#modal-expenses, .modal-overlay').addClass('active')
+		$('html, body').addClass('_over-hidden')
 	})
 	
 	
 	$('.modal__close, .modal-overlay').click(() => {
 		$('.modal, .modal-overlay').removeClass('active')
+		$('html, body').removeClass('_over-hidden')
 	})
 	
 	
@@ -73,13 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 	
-	$.plot($('#analyze'), [
-		[ [1, 3], [2, 14.01], [3.5, 3.14], [4, 6], [5, 12] ]
-	],
-		{
-		yaxis: {
-			max: 1,
-		},
-	})
+	if ($('#analyze').length) {
+		$.plot($('#analyze'), [
+				[ [1, 3], [2, 14.01], [3.5, 3.14], [4, 6], [5, 12] ]
+			],
+			{
+				yaxis: {
+					max: 1,
+				},
+			})
+	}
 
 })

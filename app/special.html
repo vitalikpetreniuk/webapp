@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="header d-flex">
-	<a href="#" class="header__logo d-flex align-items-center">
+	<a href="/" class="header__logo d-flex align-items-center">
 		<img src="images/logo.svg" alt="logo">
 		<span>Webapp</span>
 	</a>
@@ -247,10 +247,18 @@
 		</div>
 		<div class="type-analytics mt-20">
 			<ul class="d-flex">
-				<li>P/C Corve model</li>
-				<li>Breleven Analytics</li>
-				<li>Sweetspot Analytics</li>
-				<li class="active">Specid event Analytics</li>
+				<li>
+					<a href="#">P/C Corve model</a>
+				</li>
+				<li>
+					<a href="#">Breleven Analytics</a>
+				</li>
+				<li>
+					<a href="sweetspot.html">Sweetspot Analytics</a>
+				</li>
+				<li class="active">
+					<a href="special.html">Specid event Analytics</a>
+				</li>
 			</ul>
 		</div>
 		<div class="datepicker d-flex mt-20">
@@ -426,7 +434,11 @@
 <div id="modal-expenses" class="modal d-flex flex-column">
 	<span class="modal__title">Expenses</span>
 	<form class="d-flex flex-column" action="">
-		<div class="modal__select select blue">
+		<div class="tabs-section active">
+			<button class="small active">Fixed</button>
+			<button class="small">Variable</button>
+		</div>
+		<div class="modal__select select blue mt-15">
 			<input class="select__input" type="hidden" name="">
 			<div class="select__head">Expenses type</div>
 			<ul class="select__list" style="display: none;">
