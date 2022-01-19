@@ -1,137 +1,342 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport"
-					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="description" content="Webapp">
-		<link rel="icon" href="images/logo.svg">
-		<title>Document</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-		<link rel="stylesheet" href="css/app.min.css">
-	</head>
-	<body>
-		<header class="header d-flex">
-			<a href="/" class="header__logo d-flex align-items-center">
-				<img src="images/logo.svg" alt="logo">
-				<span>Webapp</span>
-			</a>
-			<div class="header__buttons d-flex">
-				<button id="revenue" class="btn__header green d-flex align-items-center">
-					<img src="images/dist/icons/plus.svg" alt="plus">
-					<span>Revenue</span>
-				</button>
-				<button id="expenses" class="btn__header red d-flex align-items-center">
-					<img src="images/dist/icons/minus.svg" alt="minus">
-					<span>Expenses</span>
-				</button>
-			</div>
-		</header>
-		<div class="content d-flex">
-			<nav class="nav">
-				<ul class="nav-tabs">
-					<li>
-						<a href="main-daily.html">Net profit</a>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Webapp">
+	<link rel="icon" href="images/logo.svg">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<header class="header d-flex">
+	<a href="/" class="header__logo d-flex align-items-center">
+		<img src="images/logo.svg" alt="logo">
+		<span>Webapp</span>
+	</a>
+	<div class="header__buttons d-flex">
+		<button id="revenue" class="btn__header green d-flex align-items-center">
+			<img src="images/dist/icons/plus.svg" alt="plus">
+			<span>Revenue</span>
+		</button>
+		<button id="expenses" class="btn__header red d-flex align-items-center">
+			<img src="images/dist/icons/minus.svg" alt="minus">
+			<span>Expenses</span>
+		</button>
+	</div>
+</header>
+<div class="content d-flex">
+	<nav class="nav">
+		<div class="mounthly-calc d-flex flex-column">
+			<span>Net profit calculator</span>
+			<div class="mounthly-calc__list">
+				<div class="title">
+					<span>January</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
 					</li>
-					<li>
-						<a href="analytics.html">Calculator</a>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
 					</li>
 				</ul>
-			</nav>
-			<section class="section d-flex flex-column">
-				<div class="tabs-section active">
-					<button>Repotny</button>
-					<button class="active">Analytics</button>
+				<div class="title">
+					<span>February</span>
 				</div>
-				<div class="type-analytics mt-20">
-					<ul class="d-flex">
-						<li class="active">
-							<a href="#">P/C Corve model</a>
-						</li>
-						<li>
-							<a href="#">Breleven Analytics</a>
-						</li>
-						<li>
-							<a href="sweetspot.html">Sweetspot Analytics</a>
-						</li>
-						<li>
-							<a href="special.html">Specid event Analytics</a>
-						</li>
-					</ul>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>March</span>
 				</div>
-			</section>
-		</div>
-		<div id="modal-revenue" class="modal d-flex flex-column">
-			<span class="modal__title">Revenue</span>
-			<form class="d-flex flex-column" action="">
-				<div class="modal__select select">
-					<input class="select__input" type="hidden" name="">
-					<div class="select__head">Revenue type</div>
-					<ul class="select__list" style="display: none;">
-						<li class="select__item">First type</li>
-						<li class="select__item">Second type</li>
-						<li class="select__item">Third type</li>
-					</ul>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>April</span>
 				</div>
-				<input class="input-field mt-15" type="number" step="10" placeholder="Summ">
-				<div class="modal__select select alt mt-15">
-					<input class="select__input" type="hidden" name="">
-					<div class="select__head">Source</div>
-					<ul class="select__list" style="display: none;">
-						<li class="select__item">First type</li>
-						<li class="select__item">Second type</li>
-						<li class="select__item">Third type</li>
-					</ul>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>May</span>
 				</div>
-				<input class="input-field mt-15" type="text" placeholder="Tag">
-				<textarea class="input-field textarea mt-15" name="" placeholder="Comment"></textarea>
-				<button type="submit" class="btn__modal mentol mt-30">Add Revenue</button>
-			</form>
-			<div class="modal__close">
-				<img src="images/dist/icons/x.svg" alt="x">
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>June</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>July</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>August</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>September</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>October</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>November</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
+				<div class="title">
+					<span>December</span>
+				</div>
+				<ul class="inner">
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net revenue</span>
+						<span>$<span>2,000,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Total marketing costs</span>
+						<span>$<span>250,000.00</span></span>
+					</li>
+					<li class="d-flex align-items-center justify-content-between">
+						<span>Net profit/loss</span>
+						<span>-$<span>72,500.00</span></span>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div id="modal-expenses" class="modal d-flex flex-column">
-			<span class="modal__title">Expenses</span>
-			<form class="d-flex flex-column" action="">
-				<div class="tabs-section active">
-					<button class="small active">Fixed</button>
-					<button class="small">Variable</button>
-				</div>
-				<div class="modal__select select blue mt-15">
-					<input class="select__input" type="hidden" name="">
-					<div class="select__head">Expenses type</div>
-					<ul class="select__list" style="display: none;">
-						<li class="select__item">Summ  $ (USD)</li>
-						<li class="select__item">% of Ad spend</li>
-						<li class="select__item">% of net revenue</li>
-					</ul>
-				</div>
-				<input class="input-field mt-15" type="number" step="10" placeholder="Summ">
-				<div class="modal__select select alt mt-15">
-					<input class="select__input" type="hidden" name="">
-					<div class="select__head">Source</div>
-					<ul class="select__list" style="display: none;">
-						<li class="select__item">First type</li>
-						<li class="select__item">Second type</li>
-						<li class="select__item">Third type</li>
-					</ul>
-				</div>
-				<input class="input-field mt-15" type="text" placeholder="Tag">
-				<textarea class="input-field textarea mt-15" name="" placeholder="Comment"></textarea>
-				<div class="repeat d-flex align-items-center mt-20">
-					<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
-					<span>Repeat monthly</span>
-				</div>
-				<button type="submit" class="btn__modal blue mt-20">Add Revenue</button>
-			</form>
-			<div class="modal__close">
-				<img src="images/dist/icons/x.svg" alt="x">
+	</nav>
+	<section class="section d-flex flex-column">
+		<div class="tabs-section active">
+			<button>Reporting</button>
+			<button class="active">Analytics</button>
+		</div>
+		<div class="type-analytics mt-20">
+			<ul class="d-flex">
+				<li>
+					<a href="#">P/C Corve model</a>
+				</li>
+				<li>
+					<a href="sweetspot.html">Sweetspot Analytics</a>
+				</li>
+				<li>
+					<a href="special.html">Specid event Analytics</a>
+				</li>
+			</ul>
+		</div>
+		<div class="datepicker d-flex mt-20">
+			<input id="datepicker" />
+			<div class="datepicker__icon d-flex align-items-center justify-content-center">
+				<img src="images/dist/icons/calendar.svg" alt="">
 			</div>
 		</div>
-		<div class="modal-overlay"></div>
-	
-		<script src="js/app.min.js"></script>
-	</body>
+		<div id="analyze" class="analyze mt-20"></div>
+	</section>
+</div>
+<div id="modal-revenue" class="modal d-flex flex-column">
+	<span class="modal__title">Revenue</span>
+	<form class="d-flex flex-column" action="">
+		<div class="modal__select select">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Revenue type</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">First type</li>
+				<li class="select__item">Second type</li>
+				<li class="select__item">Third type</li>
+			</ul>
+		</div>
+		<input class="input-field mt-15" type="number" step="10" placeholder="Summ">
+		<div class="modal__select select alt mt-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Source</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">First type</li>
+				<li class="select__item">Second type</li>
+				<li class="select__item">Third type</li>
+			</ul>
+		</div>
+		<input class="input-field mt-15" type="text" placeholder="Tag">
+		<textarea class="input-field textarea mt-15" name="" placeholder="Comment"></textarea>
+		<button type="submit" class="btn__modal mentol mt-30">Add Revenue</button>
+	</form>
+	<div class="modal__close">
+		<img src="images/dist/icons/x.svg" alt="x">
+	</div>
+</div>
+<div id="modal-expenses" class="modal d-flex flex-column">
+	<span class="modal__title">Expenses</span>
+	<form class="d-flex flex-column" action="">
+		<div class="tabs-section active">
+			<button class="small active">Fixed</button>
+			<button class="small">Variable</button>
+		</div>
+		<div class="modal__select select blue mt-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Expenses type</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">Summ  $ (USD)</li>
+				<li class="select__item">% of Ad spend</li>
+				<li class="select__item">% of net revenue</li>
+			</ul>
+		</div>
+		<input class="input-field mt-15" type="number" step="10" placeholder="Summ">
+		<div class="modal__select select alt mt-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Source</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">First type</li>
+				<li class="select__item">Second type</li>
+				<li class="select__item">Third type</li>
+			</ul>
+		</div>
+		<input class="input-field mt-15" type="text" placeholder="Tag">
+		<textarea class="input-field textarea mt-15" name="" placeholder="Comment"></textarea>
+		<div class="repeat d-flex align-items-center mt-20">
+			<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
+			<span>Repeat monthly</span>
+		</div>
+		<button type="submit" class="btn__modal blue mt-20">Add Revenue</button>
+	</form>
+	<div class="modal__close">
+		<img src="images/dist/icons/x.svg" alt="x">
+	</div>
+</div>
+<div class="modal-overlay"></div>
+
+<script src="js/app.min.js"></script>
+</body>
 </html>

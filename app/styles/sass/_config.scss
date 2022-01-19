@@ -82,6 +82,10 @@ body {
 	font-weight: 300;
 }
 
+.content {
+	height: calc(100vh - 80px);
+}
+
 ._over-hidden {
 	overflow: hidden;
 }
