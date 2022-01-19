@@ -76,7 +76,7 @@
 		&:nth-of-type(2),
 		&:nth-of-type(4),
 		&:nth-of-type(6) {
-			width: 8%;
+			width: 13%;
 		}
 	}
 	thead {
@@ -104,6 +104,8 @@
 		}
 	}
 	&#sweetpost {
+		max-width: 690px;
+		width: 100%;
 		th, td {
 			width: 25%;
 		}

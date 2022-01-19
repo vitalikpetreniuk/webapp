@@ -40,3 +40,55 @@
 .flatpickr-day.inRange {
 	//box-shadow: -17px 0 0 #e6e6e6, 20px 0 0 #e6e6e6;
 }
+
+.flatpickr-current-month {
+	font-family: Gilroy, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 14px;
+	color: #5971E9;
+}
+
+.flatpickr-current-month span.cur-month {
+	font-weight: 300;
+}
+
+.flatpickr-months {
+	position: relative;
+}
+
+.flatpickr-next-month, .flatpickr-prev-month {
+	width: 19px;
+	height: 19px !important;
+	background: #5971E9;
+	border-radius: 4px;
+	top: 50% !important;
+	transform: translate(0, -50%);
+	&::before {
+		content: '';
+		width: 11px;
+		height: 11px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: url("../images/dist/icons/arrow-datepicker.svg") no-repeat;
+	}
+}
+
+.flatpickr-next-month {
+	right: 6px !important;
+	&::before {
+		transform: rotate(-180deg) translate(50%, 50%);
+	}
+}
+
+.flatpickr-prev-month {
+	left: 6px !important;
+}
+
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+	display: none;
+}

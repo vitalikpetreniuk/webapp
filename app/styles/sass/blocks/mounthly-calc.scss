@@ -46,8 +46,23 @@
 			padding: 0;
 			max-height: 0;
 			overflow: hidden;
-			transition: 0.4s linear;
+			//transition: 0.4s linear;
 			li {
+				position: relative;
+				&::before {
+					content: '';
+					bottom: -15px;
+					left: 0;
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					background: rgba(0, 0, 0, 0.15);
+				}
+				&:last-of-type {
+					&::before {
+						display: none;
+					}
+				}
 				&:not(:last-of-type) {
 					margin-bottom: 30px;
 				}
@@ -64,8 +79,8 @@
 			}
 			&.active {
 				padding: 10px 0 20px 0;
-				//transform: scaleY(1);
-				max-height: 500px;
+				//max-height: 500px;
+				max-height: none;
 			}
 		}
 	}

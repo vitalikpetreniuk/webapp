@@ -6,6 +6,8 @@ import 'flot';
 
 document.addEventListener('DOMContentLoaded', () => {
 
+	const datepicker = document.getElementById('datepicker')
+
 	$('.mounthly-calc__list .title').on('click', function () {
 		$(this).toggleClass('active')
 		if ($(this).hasClass('active')) {
@@ -19,9 +21,38 @@ document.addEventListener('DOMContentLoaded', () => {
 		mode: "range",
 		minDate: "today",
 		dateFormat: "d.m.Y",
-		defaultDate: ["today", "31.12.2021"],
+		defaultDate: ["today", "today"],
 		showMonths: 3,
 	})
+	
+	if (datepicker.value.length === 0) {
+		$('.datepicker__icon').css({
+				'left': '0'
+			})
+	} else if (datepicker.value.length <= 10) {
+		$('.datepicker__icon').css({
+			'left': '85px'
+		})
+	} else {
+		$('.datepicker__icon').css({
+			'left': '180px'
+		})
+	}
+	
+	datepicker.oninput = function () {
+		let lengthInput = datepicker.value.length
+		
+		if (lengthInput <= 10) {
+			$('.datepicker__icon').css({
+				'left': '85px'
+			})
+		} else {
+			$('.datepicker__icon').css({
+				'left': '180px'
+			})
+		}
+		datepicker.value = datepicker.value.replace('to', '-')
+	}
 	
 	$('#revenue').click(() => {
 		$('#modal-revenue, .modal-overlay').addClass('active')
