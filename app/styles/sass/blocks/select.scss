@@ -120,4 +120,30 @@
 			}
 		}
 	}
+	&.secondary {
+		max-width: none;
+		.select {
+			&__head {
+				font-weight: 300;
+				padding: 16px 10px;
+				background: transparent;
+				line-height: 18px;
+				color: rgb(0, 0, 0, 0.97);
+				padding: 16px 0;
+				&::after {
+					display: none;
+				}
+			}
+			&__list {
+				//background: #EFF3F5;
+				background: #FFFFFF;
+			}
+			&__item {
+				color: rgba(0, 0, 0, 0.97);
+				&:hover {
+					background-color: #cbcbcb38;
+				}
+			}
+		}
+	}
 }

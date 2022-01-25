@@ -70,6 +70,14 @@
 				border-bottom: 10px solid #FFFFFF;
 			}
 		}
+		.edit-block {
+			display: none !important;
+		}
+		&:hover {
+			.edit-block {
+				display: flex !important;
+			}
+		}
 	}
 	th, td {
 		&:first-of-type,
@@ -109,5 +117,8 @@
 		th, td {
 			width: 25%;
 		}
+	}
+	.edit-block {
+		gap: 10px;
 	}
 }

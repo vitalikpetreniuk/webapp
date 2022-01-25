@@ -45,4 +45,14 @@
 			min-width: 85px;
 		}
 	}
+	&.alt {
+		button {
+			font-weight: 300;
+			color: #A3A3A3;
+			text-transform: none;
+			&.active {
+				color: #FFFFFF;
+			}
+		}
+	}
 }

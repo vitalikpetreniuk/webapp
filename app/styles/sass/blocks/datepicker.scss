@@ -92,3 +92,33 @@
 .flatpickr-months .flatpickr-next-month svg {
 	display: none;
 }
+
+#monthpicker {
+	background: #EAEDF3;
+	border-radius: 4px;
+	max-width: 690px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+}
+
+.flatpickr-calendar.flatpickr-monthSelect-theme-dark {
+	width: 100%;
+	max-width: 690px;
+	.flatpickr-rContainer,
+	.flatpickr-monthSelect-months {
+		max-width: 690px;
+		width: 100%;
+	}
+	.flatpickr-monthSelect-months {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 7px;
+		span {
+			cursor: pointer;
+			font-size: 16px;
+		}
+	}
+}
+
