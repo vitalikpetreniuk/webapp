@@ -12,9 +12,12 @@
 	z-index: 2;
 	opacity: 0;
 	visibility: hidden;
-	@include media-max-h(1080) {
-		height: 70vh;
-	} 
+	&.alt {
+		overflow: auto;
+		@include media-max-h(1080) {
+			height: 70vh;
+		}
+	}
 	&__title {
 		font-weight: 800;
 		font-size: 24px;
