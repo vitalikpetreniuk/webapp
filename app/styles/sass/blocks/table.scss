@@ -32,9 +32,12 @@
 			font-weight: 800;
 		}
 		padding: 12px 18px;
-		img {
+		svg {
 			cursor: pointer;
 			&:hover {
+				path {
+					fill: #5971E9;
+				}
 				& + div.clue {
 					opacity: 1;
 					visibility: visible;

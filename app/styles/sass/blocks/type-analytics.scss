@@ -9,6 +9,12 @@
 			background: #FFFFFF;
 			border: 1px solid #ECEEF3;
 			border-radius: 4px;
+			&:hover {
+				border: 1px solid #CCD3F4;
+			}
+			&:active {
+				background: #F9FAFE;
+			}
 			@include media-max(991) {
 				min-width: auto;
 				width: 100%;

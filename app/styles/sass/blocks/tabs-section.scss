@@ -19,6 +19,12 @@
 		border: none;
 		background: none;
 		min-width: 113px;
+		&:hover {
+			color: #5971E9;
+		}
+		&:active {
+			color: #3C50B5;
+		}
 		&:not(:last-of-type) {
 			margin-right: 6px;
 			&::before {

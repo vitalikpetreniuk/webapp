@@ -1,4 +1,5 @@
 .modal {
+	overflow: auto;
 	padding: 30px 30px 40px;
 	max-width: 382px;
 	width: 100%;
@@ -11,6 +12,9 @@
 	z-index: 2;
 	opacity: 0;
 	visibility: hidden;
+	@include media-max-h(1080) {
+		height: 70vh;
+	} 
 	&__title {
 		font-weight: 800;
 		font-size: 24px;

@@ -108,20 +108,20 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 	})
 	// }
 
-	// datepicker.oninput = function () {
-	// 	let lengthInput = datepicker.value.length
-	//
-	// 	if (lengthInput <= 10) {
-	// 		$(`.datepicker .datepicker__icon`).css({
-	// 			'left': '85px'
-	// 		})
-	// 	} else {
-	// 		$(`.datepicker .datepicker__icon`).css({
-	// 			'left': '180px'
-	// 		})
-	// 	}
-	// 	datepicker.value = datepicker.value.replace('to', '-')
-	// }
+	datepicker.oninput = function () {
+		// let lengthInput = datepicker.value.length
+
+		// if (lengthInput <= 10) {
+		// 	$(`.datepicker .datepicker__icon`).css({
+		// 		'left': '85px'
+		// 	})
+		// } else {
+		// 	$(`.datepicker .datepicker__icon`).css({
+		// 		'left': '180px'
+		// 	})
+		// }
+		datepicker.value = datepicker.value.replace('to', '-')
+	}
 	
 	$('#revenue').click(() => {
 		$('#modal-revenue, .modal-overlay').addClass('active')

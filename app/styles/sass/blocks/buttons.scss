@@ -8,6 +8,12 @@
 		&.green {
 			background: #2F4632;
 			border: 1px solid #397942;
+			&:hover {
+				border: 1px solid #55E768;
+			}
+			&:active {
+				background: #3E6944;
+			}
 			span {
 				font-weight: 300;
 				font-size: 16px;
@@ -18,6 +24,12 @@
 		&.red {
 			background: #4D3131;
 			border: 1px solid #793939;
+			&:hover {
+				border: 1px solid #FF5050;
+			}
+			&:active {
+				background: #723E3E;
+			}
 			span {
 				color: #FF5050;
 			}
