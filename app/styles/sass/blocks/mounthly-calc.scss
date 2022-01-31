@@ -27,6 +27,9 @@
 				transform: translate(0, -50%);
 				transition: .4s;
 			}
+			&:hover {
+				background: #566BD1
+			}
 			&.active {
 				&::before {
 					top: 43%;
