@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Webapp">
 	<link rel="icon" href="images/logo.svg">
-	<title>Valuable Analytics</title>
+	<title>main-daily</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
@@ -266,7 +266,7 @@
 					<th>Notes</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody class="editable">
 				<tr>
 					<td>14.10.2021</td>
 					<td class="minus editable">
@@ -278,7 +278,7 @@
 							<button class="btn__delete d-flex align-items-center justify-content-center">
 								<img src="images/dist/icons/cross.svg" alt="cross">
 							</button>
-							<button class="btn__edit d-flex align-items-center justify-content-center">
+							<button rel="pop-1" class="btn__edit d-flex align-items-center justify-content-center">
 								<img src="images/dist/icons/pencil.svg" alt="pencil">
 							</button>
 						</div>
@@ -302,7 +302,7 @@
 							<button class="btn__delete d-flex align-items-center justify-content-center">
 								<img src="images/dist/icons/cross.svg" alt="cross">
 							</button>
-							<button class="btn__edit d-flex align-items-center justify-content-center">
+							<button rel="pop-2" class="btn__edit d-flex align-items-center justify-content-center">
 								<img src="images/dist/icons/pencil.svg" alt="pencil">
 							</button>
 						</div>
@@ -382,6 +382,180 @@
 		<div class="drag-drop__error">Error! <span></span>.</div>
 	</form>
 	<button type="submit" class="btn__modal azure mt-30">Download Sample</button>
+	<div class="modal__close">
+		<img src="images/dist/icons/x.svg" alt="x">
+	</div>
+</div>
+<div id="pop-1" class="modal alt d-flex flex-column">
+	<span class="modal__title">Expenses</span>
+	<form class="d-flex flex-column" action="">
+		<div class="modal__select select blue mb-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Expenses type</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">Summ  $ (USD)</li>
+				<li class="select__item">% of Ad spend</li>
+				<li class="select__item">% of net revenue</li>
+			</ul>
+		</div>
+		<div class="modal__select select blue mb-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Expenses type</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">Summ  $ (USD)</li>
+				<li class="select__item">% of Ad spend</li>
+				<li class="select__item">% of net revenue</li>
+			</ul>
+		</div>
+		<p class="modal__text">
+			select the date range for which you want to try on data
+		</p>
+		<div class="datepicker d-flex mb-20">
+			<input id="datepicker-modal" />
+			<div class="datepicker__icon d-flex align-items-center justify-content-center">
+				<img src="images/dist/icons/calendar.svg" alt="">
+			</div>
+		</div>
+		<input class="input-field" type="number" step="10" placeholder="Summ">
+		<div class="modal__select select alt mt-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Source</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">First type</li>
+				<li class="select__item">Second type</li>
+				<li class="select__item">Third type</li>
+			</ul>
+		</div>
+		<input class="input-field mt-15" type="text" placeholder="Tag">
+		<textarea class="input-field textarea mt-15" name="" placeholder="Comment"></textarea>
+		<div class="repeat d-flex align-items-center mt-20">
+			<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
+			<span>Repeat monthly</span>
+		</div>
+		<div class="modal__select secondary select alt mt-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">
+				<div class="repeat d-flex align-items-center">
+					<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
+					<span>Repeat monthly</span>
+				</div>
+			</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">
+					<div class="repeat d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
+						<span>Repeat monthly</span>
+					</div>
+				</li>
+				<li class="select__item">
+					<div class="repeat alt d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat-grey.svg" alt="repeat">
+						<span>Weekly</span>
+					</div>
+				</li>
+				<li class="select__item">
+					<div class="repeat alt d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat-grey.svg" alt="repeat">
+						<span>Monthly</span>
+					</div>
+				</li>
+				<li class="select__item">
+					<div class="repeat alt d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat-grey.svg" alt="repeat">
+						<span>Save for all time</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<button type="submit" class="btn__modal blue mt-12">Add Expenses</button>
+	</form>
+	<div class="modal__close">
+		<img src="images/dist/icons/x.svg" alt="x">
+	</div>
+</div>
+<div id="pop-2" class="modal alt d-flex flex-column">
+	<span class="modal__title">Expenses</span>
+	<form class="d-flex flex-column" action="">
+		<div class="modal__select select blue mb-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Expenses type</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">Summ  $ (USD)</li>
+				<li class="select__item">% of Ad spend</li>
+				<li class="select__item">% of net revenue</li>
+			</ul>
+		</div>
+		<div class="modal__select select blue mb-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Expenses type</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">Summ  $ (USD)</li>
+				<li class="select__item">% of Ad spend</li>
+				<li class="select__item">% of net revenue</li>
+			</ul>
+		</div>
+		<p class="modal__text">
+			select the date range for which you want to try on data
+		</p>
+		<div class="datepicker d-flex mb-20">
+			<input id="datepicker-modal" />
+			<div class="datepicker__icon d-flex align-items-center justify-content-center">
+				<img src="images/dist/icons/calendar.svg" alt="">
+			</div>
+		</div>
+		<input class="input-field" type="number" step="10" placeholder="Summ">
+		<div class="modal__select select alt mt-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">Source</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">First type</li>
+				<li class="select__item">Second type</li>
+				<li class="select__item">Third type</li>
+			</ul>
+		</div>
+		<input class="input-field mt-15" type="text" placeholder="Tag">
+		<textarea class="input-field textarea mt-15" name="" placeholder="Comment"></textarea>
+		<div class="repeat d-flex align-items-center mt-20">
+			<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
+			<span>Repeat monthly</span>
+		</div>
+		<div class="modal__select secondary select alt mt-15">
+			<input class="select__input" type="hidden" name="">
+			<div class="select__head">
+				<div class="repeat d-flex align-items-center">
+					<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
+					<span>Repeat monthly</span>
+				</div>
+			</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">
+					<div class="repeat d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat.svg" alt="repeat">
+						<span>Repeat monthly</span>
+					</div>
+				</li>
+				<li class="select__item">
+					<div class="repeat alt d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat-grey.svg" alt="repeat">
+						<span>Weekly</span>
+					</div>
+				</li>
+				<li class="select__item">
+					<div class="repeat alt d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat-grey.svg" alt="repeat">
+						<span>Monthly</span>
+					</div>
+				</li>
+				<li class="select__item">
+					<div class="repeat alt d-flex align-items-center">
+						<img class="mr-7" src="images/dist/icons/repeat-grey.svg" alt="repeat">
+						<span>Save for all time</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<button type="submit" class="btn__modal blue mt-12">Add Expenses</button>
+	</form>
 	<div class="modal__close">
 		<img src="images/dist/icons/x.svg" alt="x">
 	</div>

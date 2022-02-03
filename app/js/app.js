@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	flatpickr($('#monthpicker'), {
 		defaultDate: new Date(),
+		mode: "range",
 		plugins: [
 			new monthSelectPlugin({
 				shorthand: true, //defaults to false
@@ -178,5 +179,19 @@ document.addEventListener('DOMContentLoaded', () => {
 				},
 			})
 	}
+	
+	$('.btn__edit').click(function (event) {
+		event.preventDefault()
+		event.stopPropagation()
+		let popup_id = $('#' + $(this).attr("rel"))
+		console.log(popup_id)
+		$(popup_id).addClass('active')
+		$('html, body').addClass('_over-hidden')
+		$('.modal-overlay').addClass('active')
+		$('.modal__close, .modal-overlay').click(() => {
+			$('.modal, .modal-overlay').removeClass('active')
+			$('html, body').removeClass('_over-hidden')
+		})
+	})
 
 })

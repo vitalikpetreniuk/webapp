@@ -95,6 +95,11 @@
 		border-radius: 4px 4px 0 0;
 	}
 	tbody {
+		&.editable {
+			tr {
+				height: 71px;
+			}
+		}
 		tr {
 			position: relative;
 			transition: .2s;
