@@ -1,0 +1,12 @@
+.field-text {
+	border: none;
+	outline: none;
+	width: 100%;
+	border-bottom: 1px solid #000000;
+	&.turquoise {
+		border-bottom: 1px solid #59caba;
+	}
+	&.blue {
+		border-bottom: 1px solid #5A69EF;
+	}
+}
