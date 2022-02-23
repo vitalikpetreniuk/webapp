@@ -43,6 +43,8 @@
 		color: rgba(255, 255, 255, 0.97);
 		font-weight: 800;
 		line-height: 20px;
+		width: 100%;
+		-webkit-appearance: button;
 		img {
 			margin-right: 6px;
 		}
@@ -55,6 +57,7 @@
 		&.blue {
 			background: linear-gradient(91.17deg, #5A69EF 6.48%, #4B5FC0 100.6%);
 			&:hover {
+				color: #FFFFFF;
 				background: linear-gradient(91.17deg,#5a69ef 6.48%,#6f85eb 100.6%);
 			}
 		}

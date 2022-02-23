@@ -12,10 +12,13 @@ jQuery(function ($) {
 	const $revenueForm = $('#revenueForm')
 	const $revenueFile = document.querySelector('#revenueFile')
 	const $revenueSelected = document.querySelector('#revenueForm .drag-drop__selected')
+	const $revenueTextLabel = document.querySelector('#revenueForm .drag-drop__selected .filename')
 	
 	const $expensesForm = $('#expensesForm')
 	const $expensesFile = document.querySelector('#expensesFile')
 	const $expensesSelected = document.querySelector('#expensesForm .drag-drop__selected')
+	const $expensesTextLabel = document.querySelector('#expensesForm .drag-drop__selected .filename')
+	
 	const $autoComplete = document.querySelector('.autoComplete')
 
 
@@ -125,7 +128,7 @@ jQuery(function ($) {
 	
 	let droppedFiles = false;
 	
-	function handleChangeFile (form, input, selected) {
+	function handleChangeFile (form, input, selected, textLabel) {
 		form.on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
@@ -150,9 +153,11 @@ jQuery(function ($) {
 			})
 			
 			input.addEventListener('change', function () {
+				let filename = $(this).val().replace(/.*\\/, "");
 				if (this.value) {
 					console.log('файл был выбран', this.value)
 					selected.classList.add('active')
+					textLabel.textContent = filename
 				} else {
 					selected.classList.remove('active')
 					console.log('Файл не был выбран')
@@ -162,8 +167,8 @@ jQuery(function ($) {
 			
 	}
 
-	handleChangeFile($revenueForm, $revenueFile, $revenueSelected)
-	handleChangeFile($expensesForm, $expensesFile, $expensesSelected)
+	handleChangeFile($revenueForm, $revenueFile, $revenueSelected, $revenueTextLabel)
+	handleChangeFile($expensesForm, $expensesFile, $expensesSelected, $expensesTextLabel)
 
 	
 	

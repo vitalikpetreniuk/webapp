@@ -48,9 +48,10 @@
 		input {
 			margin-right: 15px;
 		}
-		a {
+		button {
 			align-self: flex-end;
 			padding: 4px;
+			background: none;
 			&.turquoise {
 				border: 1px solid #59caba;
 			}
