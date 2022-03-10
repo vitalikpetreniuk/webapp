@@ -38,6 +38,12 @@
 					background: #5971E9;
 					color: #FFFFFF;
 				}
+				&.start {
+					border-radius: 7px 0 0 7px;
+				}
+				&.end {
+					border-radius: 0 7px 7px 0;
+				}
 			}
 		}
 	}

@@ -285,5 +285,32 @@ jQuery(function ($) {
 			$('html, body').removeClass('_over-hidden')
 		})
 	})
+	
+	// if ($('#listMonths').length) {
+	//	
+	// 	$('#listMonths li').on('click', function () {
+	// 		if (!$(this).hasClass('range-active')) {
+	// 			$(this).addClass('range-active')
+	// 		} else {
+	// 			$(this).removeClass('range-active')
+	// 		}
+	//
+	// 		if (!$('#listMonths li').hasClass('start')) {
+	// 			$(this).addClass('start')
+	// 		}
+	//
+	// 	})
+	//
+	// 	$('#listMonths li').on('click', function () {
+	//		
+	// 		if ($(this).hasClass('start')) {
+	//			
+	// 		}
+	//		
+	// 		$(this).addClass('range-active')
+	// 		$(this).addClass('start')
+	// 	})
+	//	
+	// }
 
 })
