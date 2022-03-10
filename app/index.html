@@ -283,9 +283,9 @@
 				<ul id="listMonths" class="d-flex justify-content-between align-items-center">
 <!--					Добавляем класс range-active, когда выбираем диапазон-->
 					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li class="range-active start"></li>
+					<li class="range-active"></li>
+					<li class="range-active end"></li>
 					<li></li>
 					<li></li>
 					<li></li>
@@ -321,13 +321,14 @@
 				</label>
 				<!--			<button class="drag-drop__button" type="submit">Upload</button>-->
 			</div>
+			<div class="drag-drop__success show">Successfully sent!</div>
 		</div>
 		<div class="modal__url d-flex align-items-center">
 			<input class="field-text align-self-end turquoise" type="text" placeholder="or paste URL adress">
 			<button type="submit" href="#" class="turquoise">Submit</button>
 		</div>
 		<a href="#" class="btn__modal turquoise mt-30" download>Download Sample</a>
-		<!--		<div class="drag-drop__success">Done!</div>-->
+<!--				<div class="drag-drop__success show">Done!</div>-->
 		<!--		<div class="drag-drop__uploading">Uploading…</div>&ndash;&gt;-->
 		<!--		<div class="drag-drop__error">Error! <span></span>.</div>-->
 	</form>
@@ -338,6 +339,20 @@
 <div id="modal-expenses" class="modal d-flex flex-column">
 	<span class="modal__title">Expenses</span>
 	<form action="">
+		<div class="modal__select select blue mb-15">
+			<!--		<input class="select__input" type="hidden" name="">-->
+			<select name="" class="select__input" type="hidden">
+				<option value="select1">Summ  $ (USD)</option>
+				<option value="select2">% of Ad spend</option>
+				<option value="select3">sum1</option>
+			</select>
+			<div class="select__head">Expenses type</div>
+			<ul class="select__list" style="display: none;">
+				<li class="select__item">Summ  $ (USD)</li>
+				<li class="select__item">% of Ad spend</li>
+				<li class="select__item">% of net revenue</li>
+			</ul>
+		</div>
 		<div class="modal__select select blue mb-15">
 			<!--		<input class="select__input" type="hidden" name="">-->
 			<select name="" class="select__input" type="hidden">
@@ -373,13 +388,13 @@
 				</label>
 				<!--			<button class="drag-drop__button" type="submit">Upload</button>-->
 			</div>
+			<div class="drag-drop__success show">Successfully sent!</div>
 		</div>
 		<div class="modal__url d-flex align-items-center">
 			<input class="field-text align-self-end blue" type="text" placeholder="or paste URL adress">
 			<button type="submit" href="#" class="blue">Submit</button>
 		</div>
 		<a href="#" class="btn__modal blue mt-30" download>Download Sample</a>
-<!--		<div class="drag-drop__success">Done!</div>-->
 <!--		<div class="drag-drop__uploading">Uploading…</div>&ndash;&gt;-->
 <!--		<div class="drag-drop__error">Error! <span></span>.</div>-->
 	</form>

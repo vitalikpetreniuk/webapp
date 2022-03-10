@@ -1,7 +1,7 @@
 .drag-drop {
 	background: #D1F1ED;
 	border-radius: 4px;
-	height: 254px;
+	height: 320px;
 	position: relative;
 	&::before {
 		content: '';
@@ -43,9 +43,28 @@
 	&__dragndrop,
 	&__uploading,
 	&__success,
-	&__error,
-	&__file {
+	&__error {
 		display: none;
+	}
+	&__file {
+		visibility: hidden;
+		position: absolute;
+		opacity: 0;
+	}
+	&__success {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #00910b;
+		background: #ffff;
+		padding: 4px 10px;
+		text-align: center;
+		width: calc(100% - 50px);
+		border-radius: 6px;
+		&.show {
+			display: block;
+		}
 	}
 	&__dragndrop {
 		display: inline;

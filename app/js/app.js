@@ -142,6 +142,18 @@ jQuery(function ($) {
 			.on('drop', function(e) {
 				console.log('drop')
 				droppedFiles = e.originalEvent.dataTransfer.files;
+				
+				if (droppedFiles) {
+					console.log('файл был выбран', droppedFiles[0].name)
+					selected.classList.add('active')
+					textLabel.textContent = droppedFiles[0].name
+				} else {
+					selected.classList.remove('active')
+					console.log('Файл не был выбран')
+				}
+				
+				console.log(droppedFiles.length)
+				console.log(input.files)
 				selected.classList.add('active')
 			});
 		
@@ -156,6 +168,7 @@ jQuery(function ($) {
 				let filename = $(this).val().replace(/.*\\/, "");
 				if (this.value) {
 					console.log('файл был выбран', this.value)
+					console.log(this.files)
 					selected.classList.add('active')
 					textLabel.textContent = filename
 				} else {
