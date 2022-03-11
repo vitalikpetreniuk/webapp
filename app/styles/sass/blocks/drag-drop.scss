@@ -43,13 +43,9 @@
 	&__dragndrop,
 	&__uploading,
 	&__success,
-	&__error {
-		display: none;
-	}
+	&__error,
 	&__file {
-		visibility: hidden;
-		position: absolute;
-		opacity: 0;
+		display: none;
 	}
 	&__success {
 		position: absolute;
@@ -57,6 +53,21 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: #00910b;
+		background: #ffff;
+		padding: 4px 10px;
+		text-align: center;
+		width: calc(100% - 50px);
+		border-radius: 6px;
+		&.show {
+			display: block;
+		}
+	}
+	&__error {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #f53349;
 		background: #ffff;
 		padding: 4px 10px;
 		text-align: center;

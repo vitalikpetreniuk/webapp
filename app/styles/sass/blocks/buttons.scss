@@ -65,6 +65,11 @@
 			background: #FFFFFF;
 			color: #59CABA;
 			border: 1px solid #59CABA;
+			transition: .2s;
+			&:hover {
+				background: #59CABA;
+				color: #FFFFFF;
+			}
 		}
 		&.azure {
 			background: #FFFFFF;

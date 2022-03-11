@@ -52,11 +52,20 @@
 			align-self: flex-end;
 			padding: 4px;
 			background: none;
+			transition: .3s;
 			&.turquoise {
 				border: 1px solid #59caba;
+				&:hover {
+					background: #59caba;
+					color: #FFFFFF;
+				}
 			}
 			&.blue {
 				border: 1px solid #5A69EF;
+				&:hover {
+					background: #5A69EF;
+					color: #FFFFFF;
+				}
 			}
 		}
 	}
