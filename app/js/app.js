@@ -275,7 +275,7 @@ jQuery(function ($) {
 		$('.select__head').removeClass('open');
 		$(this).parent().fadeOut();
 		$(this).parent().prev().text($(this).text());
-		$(this).parent().prev().prev().val($(this).text());
+		$(this).parent().prev().prev().val($(this)[0].dataset.prop);
 	});
 
 	$(document).click(function (e) {
