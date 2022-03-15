@@ -209,7 +209,6 @@ jQuery(function ($) {
 	
 	flatpickr($('#monthpicker'), {
 		defaultDate: new Date(),
-		mode: "range",
 		plugins: [
 			new monthSelectPlugin({
 				shorthand: true, //defaults to false
@@ -300,8 +299,22 @@ jQuery(function ($) {
 	})
 	
 	// if ($('#listMonths').length) {
-	//	
+	//
 	// 	$('#listMonths li').on('click', function () {
+	//
+	// 		$(this).addClass('range-active')
+	//		
+	// 		if (!$('#listMonths li').hasClass('start')) {
+	// 			// $(this).addClass('start')
+	//
+	// 			$(this).on('click', function () {
+	// 				$(this).addClass('end')
+	// 			})
+	//			
+	// 		}
+	//		
+	//
+	//		
 	// 		if (!$(this).hasClass('range-active')) {
 	// 			$(this).addClass('range-active')
 	// 		} else {
@@ -315,15 +328,15 @@ jQuery(function ($) {
 	// 	})
 	//
 	// 	$('#listMonths li').on('click', function () {
-	//		
+	//
 	// 		if ($(this).hasClass('start')) {
-	//			
+	//
 	// 		}
-	//		
+	//
 	// 		$(this).addClass('range-active')
 	// 		$(this).addClass('start')
 	// 	})
-	//	
+	//
 	// }
 
 })
