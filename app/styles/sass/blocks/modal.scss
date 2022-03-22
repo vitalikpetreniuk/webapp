@@ -76,6 +76,14 @@
 		text-align: center;
 		color: #db4d4d;
 	}
+	&#modal-expenses {
+		.inputTags-list {
+			border: 1px solid #4e61c9;
+			.inputTags-item {
+				background: #4e61c9;
+			}
+		}
+	}
 }
 
 .modal-overlay {

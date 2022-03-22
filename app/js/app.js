@@ -298,6 +298,10 @@ jQuery(function ($) {
 		})
 	})
 	
+	$('#formForExpenses').on('submit', function (e) {
+		e.preventDefault()
+	})
+	
 	// if ($('#listMonths').length) {
 	//
 	// 	$('#listMonths li').on('click', function () {
