@@ -680,6 +680,9 @@
 	$('#tags').inputTags({
 		minLength: 1,
 		max: 15,
+		autocomplete: {
+			values: ['dollar', 'euro', 'some', 'tag']
+		},
 		errors: {
 			empty:'Attention, vous ne pouvez pas ajouter un tag vide.',
 			minLength:'Attention, votre tag doit avoir au minimum %s caractères.',

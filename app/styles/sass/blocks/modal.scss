@@ -79,7 +79,8 @@
 	&#modal-expenses {
 		.inputTags-list {
 			border: 1px solid #4e61c9;
-			.inputTags-item {
+			.inputTags-item,
+			.inputTags-autocomplete-item:hover {
 				background: #4e61c9;
 			}
 		}
