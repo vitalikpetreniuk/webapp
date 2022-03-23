@@ -18,20 +18,19 @@ jQuery(function ($) {
 	const $expensesFile = document.querySelector('#expensesFile')
 	const $expensesSelected = document.querySelector('#expensesForm .drag-drop__selected')
 	const $expensesTextLabel = document.querySelector('#expensesForm .drag-drop__selected .filename')
-	
-	const $autoComplete = document.querySelector('.autoComplete')
 
 
 
 
 	if ($('.autoComplete').length) {
 		const autoCompleteJS = new autoComplete({
+			selector: "#autoFill",
 			data: {
 				src: async () => {
 					try {
 						// Loading placeholder text
 						document
-							.getElementById("autoComplete")
+							.getElementById("autoFill")
 							.setAttribute("placeholder", "Loading...");
 						// Fetch External Data Source
 						const source = await fetch(
@@ -40,7 +39,7 @@ jQuery(function ($) {
 						const data = await source.json();
 						// Post Loading placeholder text
 						document
-							.getElementById("autoComplete")
+							.getElementById("autoFill")
 							.setAttribute("placeholder", autoCompleteJS.placeHolder);
 						// Returns Fetched data
 						return data;
@@ -207,7 +206,7 @@ jQuery(function ($) {
 		showMonths: 3,
 	})
 	
-	flatpickr($('#monthpicker'), {
+	flatpickr($('.monthpicker'), {
 		defaultDate: new Date(),
 		plugins: [
 			new monthSelectPlugin({
@@ -274,7 +273,7 @@ jQuery(function ($) {
 		$('.select__head').removeClass('open');
 		$(this).parent().fadeOut();
 		$(this).parent().prev().text($(this).text());
-		$(this).parent().prev().prev().val($(this)[0].dataset.prop);
+		$(this).parent().prev().prev().val($(this)[0].dataset.prop).trigger('change');
 	});
 
 	$(document).click(function (e) {
