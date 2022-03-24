@@ -58,6 +58,14 @@
 		text-align: center;
 		width: calc(100% - 50px);
 		border-radius: 6px;
+		&.external {
+			position: relative;
+			left: auto;
+			bottom: 0;
+			width: 100%;
+			padding: 10px 5px 0 5px;
+			transform: translate(0, 0);
+		}
 		&.show {
 			display: block;
 		}
@@ -73,6 +81,14 @@
 		text-align: center;
 		width: calc(100% - 50px);
 		border-radius: 6px;
+		&.external {
+			position: relative;
+			left: auto;
+			bottom: 0;
+			width: 100%;
+			padding: 10px 5px 0 5px;
+			transform: translate(0, 0);
+		}
 		&.show {
 			display: block;
 		}
