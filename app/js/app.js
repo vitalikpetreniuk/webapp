@@ -18,7 +18,13 @@ jQuery(function ($) {
 	const $expensesTextLabel = document.querySelector('#expensesForm .drag-drop__selected .filename')
 
 	if ($('.autoComplete').length) {
-		fetch('https://webapp-bb2am.ondigitalocean.app/api/sources').then(
+		let url;
+		if (window.location.host == 'localhost:3000') {
+			url = 'https://webapp-bb2am.ondigitalocean.app/api/sources';
+		}else {
+			url = window.location.origin + '/api/sources'
+		}
+		fetch(url).then(
 			async (source) => {
 				let data;
 				try {
