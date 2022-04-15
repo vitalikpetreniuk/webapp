@@ -100,6 +100,10 @@ a:hover {
 	text-decoration: none;
 }
 
+input[type=file] {
+	display: none;
+}
+
 //@media (min-width: 1400px) {
 //	.container {
 //		max-width: 1317px;
