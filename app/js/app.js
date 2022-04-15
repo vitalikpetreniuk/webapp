@@ -279,7 +279,7 @@ jQuery(function ($) {
 		})
 	})
 	
-	$('#formForExpenses').on('submit', function (e) {
+	$('form').on('submit', function (e) {
 		e.preventDefault()
 	})
 	
