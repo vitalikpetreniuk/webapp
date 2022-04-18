@@ -279,7 +279,7 @@ jQuery(function ($) {
 		})
 	})
 	
-	$('form').on('submit', function (e) {
+	$('.modal form').on('submit', function (e) {
 		e.preventDefault()
 	})
 	
