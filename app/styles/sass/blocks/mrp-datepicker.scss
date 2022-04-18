@@ -89,6 +89,9 @@ div#mpr-calendar-2{
 .mpr-calendarholder .col-xs-6 {
 	max-width: 250px;
 	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
 }
 
 .mpr-calendarholder .col-xs-1 {
@@ -140,4 +143,23 @@ div#mpr-calendar-2{
 
 .popover{
 	max-width: 1920px!important;
+}
+
+.mpr-MonthsWrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+.mpr-month {
+	width: 25%;
+}
+
+.popover {
+	z-index: 999;
+	transform: translate(213px, 0px) !important;
+	position: absolute !important;
+	border: 8px solid white;
+	border-radius: 8px;
+	@include media-max(991) {
+		transform: translate(80px, 0px) !important;
+	}
 }
