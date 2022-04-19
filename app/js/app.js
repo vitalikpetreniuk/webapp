@@ -285,7 +285,7 @@ jQuery(function ($) {
 		e.preventDefault()
 	})
 
-	flatpickr($('#monthpicker'), {
+	flatpickr($('.flat-monthpicker'), {
 		defaultDate: "today",
 		plugins: [
 			new monthSelectPlugin({
