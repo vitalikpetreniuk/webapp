@@ -49,7 +49,6 @@
 			padding: 0;
 			max-height: 0;
 			overflow: hidden;
-			//transition: 0.4s linear;
 			li {
 				position: relative;
 				&::before {
@@ -75,14 +74,12 @@
 						color: #172E70;
 					}
 					&:last-of-type {
-						//text-align: right;
 						color: #FFFFFF;
 					}
 				}
 			}
 			&.active {
 				padding: 10px 0 20px 0;
-				//max-height: 500px;
 				max-height: none;
 			}
 		}

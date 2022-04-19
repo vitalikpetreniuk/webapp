@@ -15,5 +15,50 @@
 		background: #5971E9;
 		border-radius: 4px;
 	}
+	.icon-calendar {
+		z-index: 111;
+		width: 30px;
+		height: 34px;
+		margin-right: 4px;
+	}
 }
-
+.flatpickr-calendar {
+	border-right: 8px;
+}
+.flatpickr-monthSelect-months {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flatpickr-monthSelect-month {
+	padding: 15px 0;
+	width: 25%;
+	cursor: pointer;
+	text-transform: uppercase;
+	&:hover {
+		background: rgba(115,145,255,.75);
+		color: #FFFFFF;
+		font-weight: 700;
+	}
+	&.selected {
+		background: #5971e9;
+		color: #FFFFFF;
+		font-weight: 700;
+	}
+}
+.flatpickr-months .flatpickr-prev-month:hover svg, .flatpickr-months .flatpickr-next-month:hover svg {
+	fill: #5971e9;
+}
+.flatpickr-rContainer {
+	width: 100%;
+}
+#monthpicker {
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	display: inline-block!important;
+	padding: 4px 12px 4px 40px;
+	font-weight: 700;
+	font-size: 14px;
+}
