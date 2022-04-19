@@ -16,10 +16,9 @@
 		border-radius: 4px;
 	}
 	.icon-calendar {
-		z-index: 111;
 		width: 30px;
 		height: 34px;
-		margin-right: 4px;
+		margin-right: -1px;
 	}
 }
 .flatpickr-calendar {
@@ -51,14 +50,14 @@
 .flatpickr-rContainer {
 	width: 100%;
 }
-.flat-monthpicker {
-	position: absolute;
+.datepicker .flat-monthpicker {
 	background-color: #fff;
 	border: 1px solid #ddd;
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
 	display: inline-block!important;
-	padding: 4px 12px 4px 40px;
+	padding: 4px 12px 4px 8px;
 	font-weight: 700;
 	font-size: 14px;
+	min-width: auto;
 }
