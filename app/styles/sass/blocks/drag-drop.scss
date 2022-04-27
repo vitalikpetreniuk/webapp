@@ -46,6 +46,7 @@
 	&__error,
 	&__file {
 		display: none;
+		word-break: break-word;
 	}
 	&__success {
 		position: absolute;

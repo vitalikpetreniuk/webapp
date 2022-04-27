@@ -15,9 +15,6 @@
 	max-height: 90vh;
 	&.alt {
 		overflow: auto;
-		@include media-max-h(1080) {
-			height: 70vh;
-		}
 	}
 	&__title {
 		font-weight: 800;
