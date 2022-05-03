@@ -1,0 +1,12 @@
+.dot {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	&.red {
+		background: #F72A2A;
+	}
+	&.green {
+		background: #31DB42;
+	}
+}

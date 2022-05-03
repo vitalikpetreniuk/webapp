@@ -1,0 +1,39 @@
+.chart-info {
+	padding: 10px 40px 10px 10px;
+	background: #FFFFFF;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	width: fit-content;
+	position: relative;
+	b {
+		font-weight: 700;
+	}
+	.icon-info {
+		cursor: pointer;
+		position: absolute;
+		top: 7px;
+		right: 12px;
+		&:hover {
+			& + .help {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		img {
+			width: 13px;
+			height: 13px;
+		}
+	}
+	.help {
+		opacity: 0;
+		visibility: hidden;
+		color: #5971E9;
+		font-weight: 300;
+		position: absolute;
+		right: -160px;
+		top: -30px;
+		max-width: 150px;
+		width: 100%;
+		transition: .3s;
+	}
+}
