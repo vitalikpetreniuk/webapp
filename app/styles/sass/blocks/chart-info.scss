@@ -4,6 +4,7 @@
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
 	width: fit-content;
+	min-width: 200px;
 	position: relative;
 	b {
 		font-weight: 700;
@@ -25,15 +26,38 @@
 		}
 	}
 	.help {
+		padding: 10px 15px;
+		background: #5971E9;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+		border-radius: 4px;
 		opacity: 0;
 		visibility: hidden;
-		color: #5971E9;
+		color: #FFFFFF;
 		font-weight: 300;
 		position: absolute;
-		right: -160px;
-		top: -30px;
-		max-width: 150px;
+		left: calc(100% - 118px);
+		top: 46px;
+		max-width: 200px;
 		width: 100%;
 		transition: .3s;
+		text-align: center;
+		@include media-max(1399) {
+			width: auto;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 100%;
+			transform: translate(-50%, 0);
+			width: 0;
+			height: 0;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 15px solid #5971E9;
+			@include media-max(1399) {
+				left: 86%;
+			}
+		}
 	}
 }

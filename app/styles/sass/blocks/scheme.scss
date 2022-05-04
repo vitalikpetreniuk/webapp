@@ -1,0 +1,21 @@
+.scheme {
+	.info {
+		margin: 35px 0 0 20px;
+		b {
+			font-weight: 700;
+		}
+		& > div {
+			&:first-of-type {
+				margin-bottom: 20px;
+			}
+		}
+		.mark {
+			.dot {
+				margin-right: 8px;
+			}
+		}
+		.chart-info {
+			margin-top: 28px;
+		}
+	}
+}
